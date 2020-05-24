@@ -7,6 +7,11 @@ body {
 h1 {
   font-family: "Archivo", sans-serif;
   font-size: 75px;
+  font-weight: bold;
+}
+
+h1 .intro {
+  text-align: center;
 }
 
 h2 {
@@ -108,22 +113,8 @@ h1 {
   height: 100px;
 }
 
-.skill1 {
-  background-image: url("../images/clipboard.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.skill2 {
-  background-image: url("../images/icon_pencil.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.skill3 {
-  background-image: url("../images/icon_tool.png");
-  background-repeat: no-repeat;
-  background-position: center;
+.skill1, .skill2, .skill3 {
+  display:grid;
 }
 
 .skillText {
@@ -131,10 +122,15 @@ h1 {
   justify-content: space-between;
 }
 
+.myWork {
+  padding:20px;
+}
+
 .workGrid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  grid-gap:50px;
 }
 
 .footer {
