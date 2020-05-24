@@ -232,15 +232,14 @@ h1 {
 
   .workGrid {
     display: grid;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
     grid-template-columns: 1fr;
     grid-template-areas:
         "project"
         "blurb"
         "button"
-        "project"
-        "blurb"
-        "button";
+        "project";
+    padding-bottom:65px;
   }
 
   .project img {
