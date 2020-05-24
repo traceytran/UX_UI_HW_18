@@ -6,28 +6,30 @@ body {
 
 h1 {
   font-family: "Archivo", sans-serif;
-  font-size: 75px;
+  font-size: 55px;
   font-weight: bold;
 }
 
-h1 .intro {
-  text-align: center;
+.intro {
+  padding-left:20px;
 }
 
 h2 {
   font-family: "Archivo", sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   color: black;
 }
 
 h3 {
   font-family: "Archivo", sans-serif;
   font-size: 45px;
+  color:black;
 }
 
 h4 {
   font-family: "Archivo", sans-serif;
   font-size: 36px;
+  color:black;
 }
 
 p {
@@ -38,7 +40,7 @@ p {
 .nav {
   background-color: #06a893;
   padding: 10px;
-  height: 50px;
+  height: 100px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -61,10 +63,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.heroImg {
-  border-bottom-left-radius: 16px;
+  padding-bottom:100px;
 }
 
 .heroText {
@@ -106,24 +105,10 @@ h1 {
   margin-top: 0 auto;
 }
 
-.flexContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100px;
-}
-
-.skill1, .skill2, .skill3 {
-  display:grid;
-}
-
-.skillText {
-  display: flex;
-  justify-content: space-between;
-}
-
 .myWork {
+  background-color: #eaeff6;
   padding:20px;
+  padding-bottom:100px;
 }
 
 .workGrid {
@@ -133,19 +118,72 @@ h1 {
   grid-gap:50px;
 }
 
+.myWork img {
+  width:450px;
+  padding-left:50px;
+  padding-top:50px;
+}
+
+.blurb {
+  margin-right: 0 auto;
+  margin-left: 0 auto;
+}
+
+.flexContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle { 
+  width: 200px;
+  height: 200px;
+  background: #cbb9ff; 
+  -moz-border-radius: 100px; 
+  -webkit-border-radius: 100px; 
+  border-radius: 100px;
+}
+
+.mySkills {
+  padding:20px;
+}
+
+.skillsIcon {
+  width:100px;
+  padding:50px;
+}
+
+.skill1, .skill2, .skill3 {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
+
+.skillName {
+  text-align: justify;
+}
+
+.skillText {
+  display: flex;
+  justify-content: space-between;
+  width:275px;
+}
+
 .footer {
   background-color: #2298ff;
   margin-top: 50px;
+  padding-top:20px;
+  padding-bottom:20px;
   width: 100%;
 }
 
 #footerText {
   margin-top: 10px;
+  padding-left:10px;
 }
 
 .social_media_icons {
   height: 45px;
-  left: 10px;
+  padding-left: 10px;
 }
 
 #copyright {
@@ -163,7 +201,7 @@ h1 {
   .workGrid {
     margin: 0px 5%;
     display: grid;
-    grid-template-rows: 500px 500px;
+    grid-template-rows: 400px 400px;
     grid-template-columns: 1fr;
     grid-template-areas: "
         project
